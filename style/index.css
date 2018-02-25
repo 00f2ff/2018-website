@@ -16,8 +16,12 @@ body {
 }
 
 #container { 
-	padding: 40px 0px 0px 60px;
+	padding: 60px 0px 0px 60px;
 	width: 600px; 
+}
+
+#top p {
+	margin-top: 0px;
 }
 
 #intro {
@@ -91,11 +95,43 @@ a:hover {
 	margin: 2px 0px 2px 0px; /* not quite 25% (total) to match line height but close enough */
 }
 
+.code-wrapper {
+	padding-left: 15px;
+	background-color: #FAFAFA;
+}
+
+code {
+	font-size: 14px;
+	font-family: "Menlo-Regular", "Consolas", "Monospace"; 
+	white-space: pre;
+	line-height: 1.5;
+}
+
+code span.js-string {
+	color: #C61916;
+}
+
+/* 
+ * Just for console.log
+ */
+
+code span.log {
+	color: #4E342E;
+}
+
+code span.bark {
+	text-decoration: overline underline;
+}
+
+/*code span.close {
+	letter-spacing: -3px;
+}*/
+
 
 /* ~ modern iphones */
 @media only screen and (max-width : 740px) {
 	#container { 
-		padding: 20px 0px 0px 8.5%;
+		padding: 40px 0px 0px 8.5%;
 		width: 83%; 
 	}
 

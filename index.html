@@ -13,11 +13,6 @@ TODO:
 	- think more about font pairings / if I want to do something special to this 
 	- when / if I do a redesign, consider making separate pages for each link. If I get a lot of content this will likely be necessary. That or a modal, but modals look shitty on mobile, so probably just pages. 
 	  - Given that I'll likely use pages, I should consider re-hosting my site as some flavor of node app (simple) to preserve formatting stuff. Maybe check out vue. 
-
-	
-	1. Add media queries so this doesn't suck on mobile
-	2. Do writeup for console.log that includes styled code blocks showing what logs look like (and what I wish they looked like!)
-	2. Think about / design pages for writing, etc.
 -->
 <body>
 	<div id="container">
@@ -84,9 +79,29 @@ TODO:
 			</div>
 			<div id="smorgasbord" class="header">
 				<p class="header-title">Smorgasbord (not <a target="_blank" href="https://en.wikipedia.org/wiki/Sm%C3%B6rg%C3%A5sbord">Sm&ouml;rg&aring;sbord</a>)</p>
+				<div class="section">
+					<p class="subheader">console.log</p>
+					<div class="description">
+						<p>
+							console.log inserts environmental consciousness and puns into logging for web development. It's inspired by an excellent, Leptodactylidaeic approach to logging pioneered by <a target="_blank" href="http://tholman.com/console-dot-frog/">Tim Holman</a>. 
+						</p>
+						<p>
+							With console.log, you can now log messages to a browser console that look more like logs than they did before:
+						</p>
+						<!-- reduced indentation because this uses white-space: pre; to preserve newlines and other whitespace --> 
+						<div class="code-wrapper">
+							<code>
+> console.log(<span class="js-string">"I am a log"</span>)
+<span class="log">(<span class="bark"> I am a log (</span>0)</span>
+							</code>
+						</div>
+						<p>
+							For more features and bad jokes, check out console.log on <a target="_blank" href="https://github.com/Duncan93/console.log">GitHub</a>.
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="console.log.js"></script>
+	<script type="text/javascript" src="scripts/console.log.js"></script>
 </body>
 </html>
