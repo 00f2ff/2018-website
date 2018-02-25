@@ -1,0 +1,94 @@
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	color: #222222;
+	/*background-color: #EFEFEF;*/
+}
+
+#container { 
+	padding: 40px 0px 0px 60px;
+	width: 600px; 
+}
+
+#intro {
+	font-size: 22px;
+	line-height: 1.25;
+}
+
+#links {
+	font-size: 18px;
+}
+
+ul { padding: 0; }
+
+
+li {
+	display: inline-block;
+	margin-right: 20px;
+    padding: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #222222;
+	transition: transform 0.25s ease-in-out;
+	text-indent: 0em; /* I guess nested anchors in `.description p` inherit this property */
+	font-weight: bold;
+}
+
+a:hover {
+	-webkit-transform: skewX(-15deg);
+	-moz-transform: skewX(-15deg);
+	-o-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+}
+
+#bottom {
+	margin-top: 60px;
+}
+
+.header {
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+
+.header-title { 
+	/*font-family: 'Arial';*/
+	font-weight: 600;
+}
+
+.subheader {
+	/*font-family: 'Arial';*/
+	font-weight: 600;
+}
+
+.section {
+	margin-left: 15px;
+	font-size: 18px;
+}
+
+.description {
+	margin-left: 15px;
+	
+}
+
+/*.description p {
+	margin: 2px 0px 2px 0px;
+}*/
+
+.description p {
+	text-indent: 2em;
+	line-height: 1.25;
+	margin: 2px 0px 2px 0px; /* not quite 25% (total) to match line height but close enough */
+}

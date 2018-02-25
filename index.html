@@ -2,116 +2,23 @@
 <html>
 <head>
 	<title>Duncan</title>
-	<style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="style/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
 
-	html {
-		height: 100%;
-		width: 100%;
-	}
-
-	body {
-		position: relative;
-		margin: 0;
-		font-family: 'Georgia';
-		font-style: normal;
-		font-variant: normal;
-		font-weight: 400;
-		color: #222222;
-		/*background-color: #EFEFEF;*/
-	}
-
-	#container { 
-		padding: 40px 0px 0px 60px;
-		width: 600px; 
-	}
-
-	#intro {
-		font-size: 22px;
-		line-height: 1.25;
-	}
-
-	#links {
-		font-size: 18px;
-	}
-
-	ul { padding: 0; }
-
-
-	li {
-		display: inline-block;
-		margin-right: 20px;
-	    padding: 0;
-	}
-
-	a {
-		display: inline-block;
-		text-decoration: none;
-		color: #222222;
-		transition: transform 0.25s ease-in-out;
-		text-indent: 0em; /* I guess nested anchors in `.description p` inherit this property */
-		font-weight: bold;
-	}
-
-	a:hover {
-		-webkit-transform: skewX(-15deg);
-		-moz-transform: skewX(-15deg);
-		-o-transform: skewX(-15deg);
-		transform: skewX(-15deg);
-	}
-
-	#bottom {
-		margin-top: 60px;
-	}
-
-	.header {
-		margin-bottom: 30px;
-		font-size: 22px;
-	}
-
-	.header-title { 
-		/*font-family: 'Arial';*/
-		font-weight: 600;
-	}
-
-	.subheader {
-		/*font-family: 'Arial';*/
-		font-weight: 600;
-	}
-
-	.section {
-		margin-left: 15px;
-		font-size: 18px;
-	}
-
-	.description {
-		margin-left: 15px;
-		
-	}
-
-	/*.description p {
-		margin: 2px 0px 2px 0px;
-	}*/
-
-	.description p {
-		text-indent: 2em;
-		line-height: 1.25;
-		margin: 2px 0px 2px 0px; /* not quite 25% (total) to match line height but close enough */
-	}
-
-	/* 
-	TODO: 
+<!--
+TODO: 
 
 	- think more about font pairings / if I want to do something special to this 
 	- when / if I do a redesign, consider making separate pages for each link. If I get a lot of content this will likely be necessary. That or a modal, but modals look shitty on mobile, so probably just pages. 
 	  - Given that I'll likely use pages, I should consider re-hosting my site as some flavor of node app (simple) to preserve formatting stuff. Maybe check out vue. 
 
-
-
-
-	*/
-
-	</style>
-</head>
+	
+	1. Add media queries so this doesn't suck on mobile
+	2. Do writeup for console.log that includes styled code blocks showing what logs look like (and what I wish they looked like!)
+	2. Think about / design pages for writing, etc.
+-->
 <body>
 	<div id="container">
 		<div id="top">
@@ -120,7 +27,7 @@
 			</div>
 			<div id="links">
 				<ul>
-					<li><a target="_blank" href="files/duncan_mcisaac_resume_dec17.pdf">Resume</a></li>
+					<li><a target="_blank" href="files/duncan_mcisaac_feb18_resume.pdf">Resume</a></li>
 					<li><a target="_blank" href="https://github.com/duncan93">GitHub</a></li>
 					<li><a target="_blank" href="https://www.linkedin.com/in/dmcisaac">LinkedIn</a></li>
 					<li><a target="_blank" href="mailto:dbmcisaac1@gmail.com">Drop me a line</a></li>
@@ -131,7 +38,7 @@
 			<div id="music" class="header">
 				<p class="header-title">Music</p>
 				<div class="section">
-					<p class="subheader">Melodica Duet</p> <!-- A <a target="_blank" href="https://en.wikipedia.org/wiki/Melodica">melodica</a> -->
+					<p class="subheader">Melodica Duet</p>
 					<div class="description">
 						<p>
 							Have you ever seen a performance of <i>Piano Man</i> by Billy Joel and wondered, "could we improve Billy's efficiency by combining his two instruments?" Probably not, but that amalgamation basically describes a <a target="_blank" href="https://en.wikipedia.org/wiki/Melodica">melodica</a>.
