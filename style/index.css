@@ -29,7 +29,10 @@ body {
 	font-size: 18px;
 }
 
-ul { padding: 0; }
+ul { 
+	display: inline-block; /* may as well use flex at this point */
+	padding: 0; 
+}
 
 
 li {
@@ -77,18 +80,54 @@ a:hover {
 	margin-left: 15px;
 	font-size: 18px;
 }
-
+/*
 .description {
 	margin-left: 15px;
-	
-}
-
-/*.description p {
-	margin: 2px 0px 2px 0px;
 }*/
 
 .description p {
 	text-indent: 2em;
 	line-height: 1.25;
 	margin: 2px 0px 2px 0px; /* not quite 25% (total) to match line height but close enough */
+}
+
+
+/* ~ modern iphones */
+@media only screen and (max-width : 740px) {
+	#container { 
+		padding: 20px 0px 0px 8.5%;
+		width: 83%; 
+	}
+
+	#bottom {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width : 570px) {
+	#container { 
+		padding: 10px 0px 0px 4.5%;
+		width: 91%; 
+	}
+
+	#top p {
+		margin-top: 10px;
+	}
+
+	#links ul {
+		display: block;
+	}
+
+	#links ul:first-child {
+		margin-bottom: 8px;
+	}
+
+	#links ul:nth-child(2)  {
+		margin-top: 0px;
+		/*font-size: 16px;*/
+	}
+
+	#links li {
+		width: 40%;
+	}
 }
