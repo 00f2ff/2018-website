@@ -16,7 +16,7 @@ body {
 }
 
 #container { 
-	padding: 60px 0px 0px 60px;
+	padding: 60px 0px 60px 60px;
 	width: 600px; 
 }
 
@@ -131,7 +131,7 @@ code span.bark {
 /* ~ modern iphones */
 @media only screen and (max-width : 740px) {
 	#container { 
-		padding: 40px 0px 0px 8.5%;
+		padding: 40px 0px 40px 8.5%;
 		width: 83%; 
 	}
 
@@ -142,7 +142,7 @@ code span.bark {
 
 @media only screen and (max-width : 570px) {
 	#container { 
-		padding: 10px 0px 0px 4.5%;
+		padding: 10px 0px 10px 4.5%;
 		width: 91%; 
 	}
 
