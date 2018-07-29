@@ -15,24 +15,28 @@ body {
   text-align: center;
 }
 
-.text_64 { /* obviously these names need to change since we're going to use media queries */
+.text_size1 { 
   font-size: 64px;
 }
 
-.text_48 {
+.text_size2 {
   font-size: 48px;
 }
 
-.text_24 {
+.text_size3 {
   font-size: 24px;
 }
 
-.text_20 {
+.text_size4 {
   font-size: 20px;
 }
 
-.text_18 {
+.text_size5 {
   font-size: 18px;
+}
+
+.text_size6 {
+  font-size: 16px;
 }
 
 .title {
@@ -46,14 +50,14 @@ body {
 
 .intro {
   width: 520px;
-  margin: inherit;
+  margin: 0 auto;
   padding: 20px 0px 30px 0px;
   line-height: var(--line-height);
 }
 
 .links {
   width: 480px;
-  margin: inherit;
+  margin: 0 auto;
   padding: 0px 0px 50px 0px;
   list-style: none;
   display: flex;
@@ -119,7 +123,6 @@ a, a:visited {
 
 .date {
   padding-top: 10px;
-  font-size: 16px;
 }
 
 .writing {
@@ -134,7 +137,6 @@ a, a:visited {
   text-indent: 2em;
   --paragraph-spacing: calc(1em * (var(--line-height) - 1) / 2);
   margin: var(--paragraph-spacing) 0px;
-  font-size: 16px;
 }
 
 .code-wrapper {
